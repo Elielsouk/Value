@@ -1,0 +1,29 @@
+
+<html lang="en">
+ <head>
+   <meta charset="utf-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1">
+   <title>How to get element by id in javascript</title>
+   <style>
+   
+   </style>
+ </head>
+ <body>
+  <input oninput="showValue()" id="inputtext" type="text" placeholder="Enter a value" value="hello value">
+  
+  <p class="orderitem"></p>
+  
+  
+  <script>
+  const inputtext=document.getElementById('inputtext');
+  const orderitem=document.querySelector('.orderitem');
+  orderitem.innerText=inputtext.value;
+  
+  fuction showValue(){
+   orderitem.innerText=inputtext.value;
+  }
+  
+ </script>
+
+</body>
+</html>
